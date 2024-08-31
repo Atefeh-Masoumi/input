@@ -16,7 +16,7 @@ const Form: React.FC = () => {
         control,
         handleSubmit,
         watch,
-        formState: { errors, isValid },
+        formState: { isValid },
     } = useForm({
         resolver: yupResolver(schema),
         mode: 'onChange',
