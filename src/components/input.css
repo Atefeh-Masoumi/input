@@ -1,0 +1,72 @@
+/* components/Input.css */
+.input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #666;
+    pointer-events: none;
+    display: none;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #fff;
+  }
+  
+  .input-wrapper:focus-within {
+    border-color: #007bff;
+  }
+  
+  .input-icon {
+    margin-right: 0.5rem;
+    color: #666;
+  }
+  
+  .input-field {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .input-container.disabled .input-wrapper {
+    background-color: #f8f8f8;
+    pointer-events: none;
+    border-color: #ddd;
+  }
+  
+  .input-container.error .input-wrapper {
+    border-color: #e74c3c;
+  }
+  
+  .input-container.success .input-wrapper {
+    border-color: #2ecc71;
+  }
+  
+  .input-container.error .input-error {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+  }
+  
+  .input-label.filled,
+  .input-field:focus + .input-label {
+    transform: translateY(-1.5rem);
+    font-size: 0.875rem;
+    color: #007bff;
+    display: block;
+  }
+  
