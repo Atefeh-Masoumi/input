@@ -30,6 +30,7 @@ const Form: React.FC = () => {
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <Input
                 name="username"
+                type='text'
                 control={control}
                 label="Username"
                 placeholder="Enter your username"

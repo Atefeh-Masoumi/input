@@ -21,7 +21,7 @@ const Input: React.FC<InputProps> = ({
     control,
     label,
     placeholder,
-    type = 'text',
+    type,
     icon,
     disabled = false,
     required = false,
